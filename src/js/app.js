@@ -27,7 +27,8 @@ function doSearch(searchTerm) {
                     var bookSnippet = book.searchInfo ? book.searchInfo.textSnippet : "Descrição não disponível";
                     var bookPages = book.volumeInfo.pageCount ? book.volumeInfo.pageCount : "N/D";
                     var bookPrice = book.saleInfo.retailPrice ? book.saleInfo.retailPrice.amount.toString().replace('.', ',') : "N/D";
-                    var bookPreviewLink = book.accessInfo.webReaderLink;
+                    var bookPreviewLink = book.accessInfo.webReaderLink.replace('http://','https://');
+                    
                     var theResult = '<div class="book">' +
                         '<div class="myFav">' +
                             '<a onclick="bookFav(\''+bookID+'\')"><i class="fa '+hClass+'" aria-hidden="true"></i></a>' + 
