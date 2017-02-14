@@ -1,9 +1,9 @@
 .site-header {
   padding: 1em 0;
-  background: url(/images/topbg.png) center repeat;
+  background: url(../images/topbg.png) center repeat;
   color: white;
-  background: -webkit-linear-gradient(rgba(63, 95, 67, 0.5), #3f5f43), url(/images/topbg.png) center repeat;
-  background: linear-gradient(rgba(63, 95, 67, 0.5), #3f5f43), url(/images/topbg.png) center repeat; }
+  background: -webkit-linear-gradient(rgba(63, 95, 67, 0.5), #3f5f43), url(../images/topbg.png) center repeat;
+  background: linear-gradient(rgba(63, 95, 67, 0.5), #3f5f43), url(../images/topbg.png) center repeat; }
   .site-header .form-group {
     max-width: 400px;
     margin: auto;
@@ -24,7 +24,7 @@
   padding: 1em 15px; }
 
 .loading {
-  background-image: url(/images/loading.gif);
+  background-image: url(../images/loading.gif);
   background-repeat: no-repeat;
   background-position: 98% center; }
 
