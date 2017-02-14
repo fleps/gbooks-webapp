@@ -1,0 +1,81 @@
+
+$bg-top-img: url(/images/topbg.png) center repeat;
+$bt-top-img-effect:rgba(63, 95, 67, 0.5), rgba(63, 95, 67, 1);
+$darkcolor: #4E7658;
+.site-header {
+    padding: 1em 0;
+    background: $bg-top-img;
+    color: white;
+    background: -webkit-linear-gradient($bt-top-img-effect), $bg-top-img ;
+    background: linear-gradient($bt-top-img-effect), $bg-top-img;
+    .form-group{
+        max-width: 400px;
+        margin: auto;
+        padding: 0.6em;
+    }
+    .form-control{
+        border: 8px solid rgba(0,0,0,.15);
+        // CSS solution to make the placeholder text "dissapear" when focusing the input
+        &:focus::-webkit-input-placeholder {color: transparent;}
+        &:focus:-ms-input-placeholder{color: transparent;}
+        &:focus::-moz-placeholder{color: transparent;}
+    }
+}
+#searchResult{
+    display: none;
+    max-width: 800px;
+    background-color: #FFF;
+    padding: 1em 15px;
+}
+.loading{
+    background-image: url(/images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+.searchInfo{
+    padding:1em 0;
+    color:#999;
+    span{text-transform: uppercase; color: $darkcolor; font-weight: bold}
+}
+.book{
+    border: 8px solid rgba(0,0,0,.15);
+    position: relative;
+    margin-bottom: 2em;
+    .text-muted{font-size: 0.8em;}
+    .myFav{
+        position: absolute;
+        right: 10px;
+        font-size: 1.5em;
+        z-index: 1;
+        a {
+            color: $darkcolor;
+            display: block;
+            cursor: pointer;
+        }
+    }
+    > div:nth-child(2){//book thumb and description
+        padding: 1em;
+        h3{font-size: 1.2em;}
+        p{font-size: 1em;}
+        .col{padding-left: 1em;}
+    }
+    > div:nth-child(3){//book bar with rating, value and link
+        background-color: #f2f2f2;
+        padding: 0.6em;
+        color: $darkcolor;
+        a{
+            color: $darkcolor;
+            text-decoration: underline;
+        }
+    }
+}
+.page-link{
+    color: $darkcolor;
+}
+.page-item.active .page-link{
+    background-color: $darkcolor;
+    border-color: $darkcolor;
+}
+html, body{height: 100%;}
+.modal-dialog{width: 95%; max-width: 95%;}
+.modal-body iframe{width: 100%; height: calc(100vh - 160px); box-sizing: border-box;}

@@ -1,0 +1,87 @@
+.site-header {
+  padding: 1em 0;
+  background: url(/images/topbg.png) center repeat;
+  color: white;
+  background: -webkit-linear-gradient(rgba(63, 95, 67, 0.5), #3f5f43), url(/images/topbg.png) center repeat;
+  background: linear-gradient(rgba(63, 95, 67, 0.5), #3f5f43), url(/images/topbg.png) center repeat; }
+  .site-header .form-group {
+    max-width: 400px;
+    margin: auto;
+    padding: 0.6em; }
+  .site-header .form-control {
+    border: 8px solid rgba(0, 0, 0, 0.15); }
+    .site-header .form-control:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .site-header .form-control:focus:-ms-input-placeholder {
+      color: transparent; }
+    .site-header .form-control:focus::-moz-placeholder {
+      color: transparent; }
+
+#searchResult {
+  display: none;
+  max-width: 800px;
+  background-color: #FFF;
+  padding: 1em 15px; }
+
+.loading {
+  background-image: url(/images/loading.gif);
+  background-repeat: no-repeat;
+  background-position: 98% center; }
+
+.searchInfo {
+  padding: 1em 0;
+  color: #999; }
+  .searchInfo span {
+    text-transform: uppercase;
+    color: #4E7658;
+    font-weight: bold; }
+
+.book {
+  border: 8px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin-bottom: 2em; }
+  .book .text-muted {
+    font-size: 0.8em; }
+  .book .myFav {
+    position: absolute;
+    right: 10px;
+    font-size: 1.5em;
+    z-index: 1; }
+    .book .myFav a {
+      color: #4E7658;
+      display: block;
+      cursor: pointer; }
+  .book > div:nth-child(2) {
+    padding: 1em; }
+    .book > div:nth-child(2) h3 {
+      font-size: 1.2em; }
+    .book > div:nth-child(2) p {
+      font-size: 1em; }
+    .book > div:nth-child(2) .col {
+      padding-left: 1em; }
+  .book > div:nth-child(3) {
+    background-color: #f2f2f2;
+    padding: 0.6em;
+    color: #4E7658; }
+    .book > div:nth-child(3) a {
+      color: #4E7658;
+      text-decoration: underline; }
+
+.page-link {
+  color: #4E7658; }
+
+.page-item.active .page-link {
+  background-color: #4E7658;
+  border-color: #4E7658; }
+
+html, body {
+  height: 100%; }
+
+.modal-dialog {
+  width: 95%;
+  max-width: 95%; }
+
+.modal-body iframe {
+  width: 100%;
+  height: calc(100vh - 160px);
+  box-sizing: border-box; }
