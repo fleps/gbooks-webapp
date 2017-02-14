@@ -18,7 +18,8 @@
     "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Felipe Spengler",
   "license": "ISC"
